@@ -1,13 +1,13 @@
 \beamer@sectionintoc {1}{Introduction to nuclear fusion}{2}{0}{1}
-\beamer@sectionintoc {2}{Introduction to plasma physics}{4}{0}{2}
-\beamer@sectionintoc {3}{Introduction to \texttt {Gorilla}}{8}{0}{3}
-\beamer@sectionintoc {4}{Implementation of the grid}{10}{0}{4}
-\beamer@sectionintoc {5}{Cylindrical contour grid}{12}{0}{5}
-\beamer@sectionintoc {6}{Symmetry flux coordinates}{13}{0}{6}
-\beamer@sectionintoc {7}{Field aligned grid}{15}{0}{7}
-\beamer@sectionintoc {8}{Numerical orbit calculation}{18}{0}{8}
-\beamer@sectionintoc {9}{Analytical treatment}{19}{0}{9}
-\beamer@sectionintoc {10}{Application: Mono-energetic radial transport coefficient}{24}{0}{10}
-\beamer@sectionintoc {11}{Conclusion}{25}{0}{11}
-\beamer@sectionintoc {12}{Conclusion}{26}{0}{12}
-\beamer@sectionintoc {14}{Back-up slides}{27}{0}{13}
+\beamer@sectionintoc {2}{Introduction to plasma physics}{3}{0}{2}
+\beamer@sectionintoc {3}{Introduction to \texttt {Gorilla}}{7}{0}{3}
+\beamer@sectionintoc {4}{Implementation of the grid}{9}{0}{4}
+\beamer@sectionintoc {5}{Cylindrical contour grid}{11}{0}{5}
+\beamer@sectionintoc {6}{Symmetry flux coordinates}{12}{0}{6}
+\beamer@sectionintoc {7}{Field aligned grid}{14}{0}{7}
+\beamer@sectionintoc {8}{Numerical orbit calculation}{17}{0}{8}
+\beamer@sectionintoc {9}{Analytical treatment}{18}{0}{9}
+\beamer@sectionintoc {10}{Results}{22}{0}{10}
+\beamer@sectionintoc {11}{Conclusion}{24}{0}{11}
+\beamer@sectionintoc {12}{Conclusion}{25}{0}{12}
+\beamer@sectionintoc {14}{Back-up slides}{26}{0}{13}

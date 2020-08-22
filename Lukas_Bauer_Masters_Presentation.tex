@@ -115,32 +115,32 @@ orbit code GORILLA}
 
 \section{Introduction to nuclear fusion}
 
-\begin{frame}
-	\frametitle{What is nuclear fusion?}
-	\vspace{-1 cm}
-	\begin{columns}[onlytextwidth]
-		\begin{column}{0.45\textwidth}
-			\begin{center}
-					\begin{figure}
-				\includegraphics[trim={0 0 0 2cm},clip,width=0.8\textwidth]{FIGURES/Deuterium-tritium_fusion.png}
-				\caption{ $^2_1\text{H}^+ +~ ^3_1\text{H}^+	\rightarrow ~ ^4_2\text{He}^{2+} +~ ^1_0\text{n}$}
-					\end{figure}
-			\end{center}
-		\end{column}
-		\begin{column}{0.45\textwidth}
-			\begin{center}
-				\begin{itemize}
-					\item Atomic nuclei are combined to form different atomic nuclei and subatomic particles\\
-					\item 17.6 MeV are released as kinetic energy in fusion of Deuterium+Tritium\\
-				\end{itemize}
-			\end{center}
-		\end{column}
-	\end{columns}
-\vspace{0.3cm}
-\begin{footnotesize}
-				{\tiny Figure taken from: https://de.wikipedia.org/wiki/Kernfusion\#/media/Datei:Deuterium-tritium\_fusion.svg}
-\end{footnotesize}
-\end{frame}
+%\begin{frame}
+%	\frametitle{What is nuclear fusion?}
+%	\vspace{-1 cm}
+%	\begin{columns}[onlytextwidth]
+%		\begin{column}{0.45\textwidth}
+%			\begin{center}
+%					\begin{figure}
+%				\includegraphics[trim={0 0 0 2cm},clip,width=0.8\textwidth]{FIGURES/Deuterium-tritium_fusion.png}
+%				\caption{ $^2_1\text{H}^+ +~ ^3_1\text{H}^+	\rightarrow ~ ^4_2\text{He}^{2+} +~ ^1_0\text{n}$}
+%					\end{figure}
+%			\end{center}
+%		\end{column}
+%		\begin{column}{0.45\textwidth}
+%			\begin{center}
+%				\begin{itemize}
+%					\item Atomic nuclei are combined to form different atomic nuclei and subatomic particles\\
+%					\item 17.6 MeV are released as kinetic energy in fusion of Deuterium+Tritium\\
+%				\end{itemize}
+%			\end{center}
+%		\end{column}
+%	\end{columns}
+%\vspace{0.3cm}
+%\begin{footnotesize}
+%				{\tiny Figure taken from: https://de.wikipedia.org/wiki/Kernfusion\#/media/Datei:Deuterium-tritium\_fusion.svg}
+%\end{footnotesize}
+%\end{frame}
 
 
 
@@ -356,21 +356,7 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 \end{frame}
 
 
-%\begin{frame}
-%\frametitle{Physically correct long time orbit dynamics}
-%\vspace{-0.5cm}
-%\begin{itemize}
-%	\item
-%	Linear approximation of field quantities does \textbf{not destroy the Hamiltonian nature} of the original guiding center equations.
-%	\item Non-canonical Hamiltonian form of linear ODE set
-%	\be{hamform}
-%	\frac{\rd z^i}{\rd \tau}=\Lambda^{ij}\difp{H}{z^j}, \qquad \Lambda^{ij}(\bz)=\left\{z^i,z^j\right\}_\tau,
-%	\ee
-%	with Hamiltonian $H(\bz)=v_\parallel^2/2-U(\bx)$ and antisymmetric Poisson matrix  $\Lambda^{ij}(\bz)$.
-%	\item \textbf{Symplecticity:} Phase space volume is conserved.
-%\end{itemize}
-%
-%\end{frame}
+
 
 \section{Implementation of the grid}
 
@@ -1076,8 +1062,9 @@ $\rightarrow$ $RK4$ corresponds to fourth order expansion, thus the fifth order 
 %%\end{itemize}
 %%\end{frame}
 
+\section{Results}
 \begin{frame}
-\frametitle{Poincare plots of guiding center orbits}
+\frametitle{Poincar\'e plots of guiding center orbits}
 \note{Alles erklaeren}
 \vspace{-1.1cm}
 %\hspace{-7cm}
@@ -1091,19 +1078,7 @@ $\rightarrow$ $RK4$ corresponds to fourth order expansion, thus the fifth order 
 \end{itemize}
 \end{frame}
 
-%\begin{frame}
-%\frametitle{Axisymmetric noise of electrostatic and vector potential}
-%\vspace{-0.4cm}
-%%\hspace{-7cm}
-%\begin{figure}
-%	\hspace*{-1.05cm}\includegraphics[trim={0cm 0cm 0cm 0cm},clip,width=1\textwidth]{FIGURES/axissymetric_noise.eps}
-%\end{figure}
-%\begin{itemize}
-%	\vspace*{-0.6cm}
-%	\item Similar orbit shape (compared to unperturbed orbit)
-%	\item Canonical toroidal angular momentum is preserved.
-%\end{itemize}
-%\end{frame}
+
 
 %\section{Artifact: Numerical diffusion}
 
@@ -1182,7 +1157,6 @@ $\rightarrow$ $RK4$ corresponds to fourth order expansion, thus the fifth order 
 %
 %\end{frame}
 
-\section{Application: Mono-energetic radial transport coefficient}
 
 
 %\begin{frame}
@@ -1266,6 +1240,23 @@ $E_{kin}=$ 3 keV, $s_0 = 0.6$
  \end{frame}
 
 \section{Back-up slides}
+
+\begin{frame}
+\frametitle{Physically correct long time orbit dynamics}
+\vspace{-0.5cm}
+\begin{itemize}
+	\item
+	Linear approximation of field quantities does \textbf{not destroy the Hamiltonian nature} of the original guiding center equations.
+	\item Non-canonical Hamiltonian form of linear ODE set
+	\be{hamform}
+	\frac{\rd z^i}{\rd \tau}=\Lambda^{ij}\difp{H}{z^j}, \qquad \Lambda^{ij}(\bz)=\left\{z^i,z^j\right\}_\tau,
+	\ee
+	with Hamiltonian $H(\bz)=v_\parallel^2/2-U(\bx)$ and antisymmetric Poisson matrix  $\Lambda^{ij}(\bz)$.
+	\item \textbf{Symplecticity:} Phase space volume is conserved.
+\end{itemize}
+
+\end{frame}
+
 \begin{frame}
 \frametitle{Generate grid vertices}
 \vspace{-1 cm}
@@ -1322,7 +1313,19 @@ $E_{kin}=$ 3 keV, $s_0 = 0.6$
 \end{columns}
 \end{frame}
 
-
+\begin{frame}
+\frametitle{Axisymmetric noise of electrostatic and vector potential}
+\vspace{-0.4cm}
+%\hspace{-7cm}
+\begin{figure}
+	\hspace*{-1.05cm}\includegraphics[trim={0cm 0cm 0cm 0cm},clip,width=1\textwidth]{FIGURES/axissymetric_noise.eps}
+\end{figure}
+\begin{itemize}
+	\vspace*{-0.6cm}
+	\item Similar orbit shape (compared to unperturbed orbit)
+	\item Canonical toroidal angular momentum is preserved.
+\end{itemize}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \end{document}
