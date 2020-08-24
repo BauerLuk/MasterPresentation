@@ -159,13 +159,17 @@ orbit code GORILLA}
 		\end{figure}
 		\end{center}
 	\end{column}
-	\begin{column}{0.45\textwidth}
-		\vspace{0 cm}
+	\begin{column}{0.55\textwidth}
+		\vspace{1cm}
 		\begin{center}
 			\begin{itemize}
 				\item Heating of D-T plasma to $\sim10^8~\text{K}$ in toroidal magnetic configuration
-				\item Self sustained reaction according to the Lawson Criterion for the triple product $n~\tau~T > C$
-				\item Two main types of devices: Tokamaks and Stellarators
+				\vspace{0.5cm}
+				\item Two main types of devices: 
+				\begin{itemize}
+				\item Tokamaks 
+				\item Stellarators
+				\end{itemize}
 			\end{itemize}
 		\end{center}
 	\end{column}
@@ -179,7 +183,7 @@ orbit code GORILLA}
 \section{Introduction to plasma physics}
 \begin{frame}
 \frametitle{Theoretical descriptions of plasmas}
-\vspace{-1.2 cm}
+\vspace{-1.5 cm}
 \begin{columns}[onlytextwidth]
 	\begin{column}{0.5\textwidth}
 		\begin{center}
@@ -187,77 +191,81 @@ orbit code GORILLA}
 			\item Magnetohydro-\\
 			dynamics (MHD)
 			\begin{itemize}
-				\item describes the plasma as an electrically conducting fluid
-				\item only valid at high particle collisionalities \\
-				$\rightarrow$ velocity distributions are considered to be Maxwellian
+				\item conducting fluid
+				\item high particle collisionalities \\
+%				$\rightarrow$ Maxwellian velocity distributions
 			\end{itemize}
+				\item Kinetic Approach
+				\begin{itemize}
+						\item distribution function $f(\vec{x},\vec{v})$
+				\end{itemize}
 			\end{itemize}
 		\end{center}
+		
+
 	\end{column}
 	\begin{column}{0.5\textwidth}
 		\begin{center}
-			\begin{itemize}
-			\item Kinetic Approach
-				\begin{itemize}
-						\item description of plasma through discrete particle distribution functions $f(\vec{x},\vec{v})$ of phase space
-				\end{itemize}
+\begin{itemize}
 			\item Gyro-kinetic Approach
 				\begin{itemize}
-				\item averaging over gyrating motion around field lines
-				\item reduced distribution function $f(\vec{x},v_\parallel, v_\perp)$
+				\item averaging over gyro-motion
+				\item $f(\vec{x},v_\parallel, v_\perp)$
 			\end{itemize}
 			\end{itemize}
 		\end{center}
-	\end{column}
-\end{columns}
- \end{frame}
-
-\begin{frame}
-\frametitle{Guiding center motion}
-\vspace{-1 cm}
-\begin{columns}[onlytextwidth]
-	\begin{column}{0.45\textwidth}
-		\begin{center}
+						\begin{center}
 		\begin{figure}
-					\includegraphics[trim={0 2cm 0cm 0cm},clip,width=1.1\textwidth]{FIGURES/guiding_center.jpg}
-\caption{Guiding center motion}	
+		\vspace{-0.3cm}
+					\includegraphics[trim={0 2cm 0cm 0cm},clip,width=0.95\textwidth]{FIGURES/guiding_center.jpg}\\
+					\begin{footnotesize}
+					Guiding center motion$^{[3]}$
+					\end{footnotesize}
+				
 \end{figure}
 		\end{center}
 	\end{column}
-	\begin{column}{0.45\textwidth}
-		\begin{center}
-			\begin{itemize}
-				\item particles gyrate around field lines
-				\item $\rightarrow$ average over fast gyration
-				\item corrections to motion in form of drifts
-				\item for gyro-kinetic approach many particles need to be traced in boxes
-			\end{itemize}
-		\end{center}
-	\end{column}
 \end{columns}
-\vspace{0.5cm}
-\begin{footnotesize}
-	{\tiny Figure taken from: http://www.thunderbolts.info/eg\_draft/images/particle\_trajectory\_diagram\_1126x844.jpg}
-\end{footnotesize}
-\end{frame}
+\vspace{0.2cm}
+\begin{tiny}
+[3] http://www.thunderbolts.info/eg\_draft/images/particle\_trajectory\_diagram\_548x389.jpg
+\end{tiny}
+ \end{frame}
+
+%\begin{frame}
+%\frametitle{Guiding center motion}
+%\vspace{-1 cm}
+%\begin{columns}[onlytextwidth]
+%	\begin{column}{0.45\textwidth}
+%		\begin{center}
+%		\begin{figure}
+%					\includegraphics[trim={0 2cm 0cm 0cm},clip,width=1.1\textwidth]{FIGURES/guiding_center.jpg}
+%\caption{Guiding center motion}	
+%\end{figure}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.45\textwidth}
+%		\begin{center}
+%			\begin{itemize}
+%				\item particles gyrate around field lines
+%				\item $\rightarrow$ average over fast gyration
+%				\item corrections to motion in form of drifts
+%				\item for gyro-kinetic approach many particles need to be traced in boxes
+%			\end{itemize}
+%		\end{center}
+%	\end{column}
+%\end{columns}
+%\vspace{0.5cm}
+%\begin{footnotesize}
+%	{\tiny Figure taken from: http://www.thunderbolts.info/eg\_draft/images/particle\_trajectory\_diagram\_1126x844.jpg}
+%\end{footnotesize}
+%\end{frame}
 
 
 
 
 
-\begin{frame}
-\frametitle{Target application: kinetic equilibria}
-%\begin{itemize}
-%\item Kinetic modelling of edge plasmas
-%\item Quasi-steady plasma parameters in 3D toroidal fusion devices
-%%\begin{itemize}
-%%\item Simple (cylindrical) modelling of perturbed tokamak equilibria shows that the problem of shielding of external perturbations is essentially kinetic.
-%%\item 3D equilibria should be computed by using plasma response currents and charges in kinetic approximation. \\
-%%$\rightarrow$ Global Monte Carlo modelling
-%%\end{itemize}
-%\end{itemize}
-	\centering \includegraphics[trim={0 0 0 3cm},clip,width=\textwidth]{FIGURES/cycle01.pdf}
-\end{frame}
+
 
 
 
@@ -271,22 +279,20 @@ orbit code GORILLA}
 
 
 
-
-
-
-\begin{frame}
-\frametitle{Requirements to orbit integrator}
-\vspace{-0.5cm}
-\begin{itemize}
-\item \textbf{Physically correct long-time orbit dynamics}
-\item \textbf{Low sensitivity to noise in fields:} Perturbation field from plasma response currents and charges is noisy due to stochasticity of particle collisions (Monte Carlo).
-\item \textbf{High computational efficiency}
-\begin{itemize}
-\item \textbf{Integrator efficiency:} Millions of orbits should be followed for few collision times at each iteration.
-\item \textbf{Efficient box counting:} Orbit intersections with boundaries of grid cells should be traced efficiently.
-\end{itemize}
-\end{itemize}
-\end{frame}
+%
+%\begin{frame}
+%\frametitle{Requirements to orbit integrator}
+%\vspace{-0.5cm}
+%\begin{itemize}
+%\item \textbf{Physically correct long-time orbit dynamics}
+%\item \textbf{Low sensitivity to noise in fields:} Perturbation field from plasma response currents and charges is noisy due to stochasticity of particle collisions (Monte Carlo).
+%\item \textbf{High computational efficiency}
+%\begin{itemize}
+%\item \textbf{Integrator efficiency:} Millions of orbits should be followed for few collision times at each iteration.
+%\item \textbf{Efficient box counting:} Orbit intersections with boundaries of grid cells should be traced efficiently.
+%\end{itemize}
+%\end{itemize}
+%\end{frame}
 
 
 \section{Introduction to \texttt{Gorilla}}
@@ -328,10 +334,10 @@ orbit code GORILLA}
 	\begin{itemize}
 		\item preserved total energy, magnetic moment and phase space volume
 	\end{itemize}
-	\item \textbf{Low sensitivity to noise in fields}
+	\item \textbf{Insensitive to noise in fields}
 	\item \textbf{Computationally efficient}
 		\begin{itemize}
-			\item not exact orbit shape and time evolution
+			\item relaxed requirement to orbit shape and time evolution
 		\end{itemize}
 \end{itemize}
 \end{frame}
@@ -350,8 +356,8 @@ v_\parallel=\sigma \left(\frac{2}{m_\alpha}\left(w-J_\perp\omega_c-e_\alpha\Phi\
 \vspace{0.075cm}\\
 Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \newline$\rightarrow$ equations of motion:
 \vspace{-0.5cm}
-\be{standeqset}
-\hspace{2.5cm}\frac{\rd z^i}{\rd \tau} = a^i_k z^k + b^i
+\be{}
+\hspace{2.5cm}\frac{\rd \textbf{z}}{\rd \tau} = \hat{\textbf{a}}\textbf{z} + \textbf{b}
 \ee
 \end{frame}
 
@@ -364,27 +370,28 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 \frametitle{Spatial discretization: grid for \textbf{Gorilla}}
 \vspace{-1cm}
 \begin{columns}[onlytextwidth]
-	\begin{column}{0.4\textwidth}
-			\begin{center}
-		\vspace{-0cm}
-		\includegraphics[trim={5cm 1cm 0cm 0cm},clip,width=1\textwidth,right]{FIGURES/tetrahedron_guiding_center.eps}
-	\end{center}	
+	\begin{column}{0.37\textwidth}
+		\begin{center}
+			\vspace{-0.5cm}
+			\includegraphics[trim={5cm 1cm 0cm 0cm},clip,width=0.85\textwidth,right]{FIGURES/tetrahedron_guiding_center.eps}
+			\includegraphics[trim={4 1.6 1 0.6cm},clip,width=0.9\textwidth,right]{FIGURES/HangingNode.eps}
+		\end{center}	
 	\end{column}
-	\begin{column}{0.6\textwidth}
-
-\begin{itemize}
-\item Why do we need a grid?\\
-\begin{itemize}
-\item linearization of field quantities\\
-
-\item box counting scheme for distribution function
-\end{itemize}
-\item What is the consequence?\\
-\begin{itemize}
-\item guiding-center orbits need to be computed between cell boundaries
-\end{itemize}
-\end{itemize}
-\end{column}
+	\begin{column}{0.63\textwidth}
+		\begin{itemize}
+			\item Why do we need a grid?\\
+			\begin{itemize}
+				\item linearization of field quantities\\
+				\item box counting scheme for distribution function
+			\end{itemize}
+			\item Requirements to grid:
+			\begin{itemize}
+				\item tetrahedral grid elements
+				\item no holes or overlaps
+				\item no hanging nodes
+			\end{itemize}
+		\end{itemize}
+	\end{column}
 \end{columns}
 \end{frame}
 
@@ -398,19 +405,19 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 %\end{frame}
 
 %\section{Requirements to the grid}
-\begin{frame}
-\frametitle{Requirements to grid}
-\vspace{-0.5cm}
-\begin{itemize}
-	\item linear scalar functions of space have \textbf{four} degrees of freedom $\rightarrow$ \textbf{tetrahedral} grid elements for uniquely determined function coefficients
-	
-	\item no holes or overlaps in grid
-		
-	\item continuous linearized field components \newline $\rightarrow$ no hanging nodes
-	
-\end{itemize}
-\vspace{-0.6cm} \hspace{0.9cm}\includegraphics[trim={4 1.6 1 0.6cm},clip,width=0.45\textwidth,right]{FIGURES/HangingNode.eps}
-\end{frame}
+%\begin{frame}
+%\frametitle{Requirements to grid}
+%\vspace{-0.5cm}
+%\begin{itemize}
+%	\item linear scalar functions of space have \textbf{four} degrees of freedom $\rightarrow$ \textbf{tetrahedral} grid elements for uniquely determined function coefficients
+%	
+%	\item no holes or overlaps in grid
+%		
+%	\item continuous linearized field components \newline $\rightarrow$ no hanging nodes
+%	
+%\end{itemize}
+%\vspace{-0.6cm} \hspace{0.9cm}\includegraphics[trim={4 1.6 1 0.6cm},clip,width=0.45\textwidth,right]{FIGURES/HangingNode.eps}
+%\end{frame}
 
 %
 %\begin{frame}
@@ -478,37 +485,7 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 %\end{itemize}
 %\end{frame}
 
-\section{Cylindrical contour grid}
-\begin{frame}
-\frametitle{Previous grid in cylindrical coordinates}
-\vspace{-1.5 cm}
-\begin{columns}[onlytextwidth]
-	\begin{column}{0.5\textwidth}
-		\begin{center}
-			\begin{figure}
-				\includegraphics[trim={0 1cm 0 2cm},clip,width=0.8\textwidth]{FIGURES/3d_grid_sketch_torus.pdf}
-				\caption{Hexahedra}
-				\vspace{-0.2 cm}
-				\includegraphics[trim={0 1cm 0 2cm},clip,width=0.8\textwidth]{FIGURES/full_grid_rect.png}
-				\caption{Cylindrical Contour Grid}
-			\end{figure}
-		\end{center}
-	\end{column}
-	\begin{column}{0.48\textwidth}
-		\vspace{-0cm}
-		\begin{center}
-			\begin{itemize}
-				\item vertices lie on contours of cylindrical coordinates $(R,\varphi,Z)$
-				\item hexahedra are obtained via indexing
-				\item each hexahedron is cut into six tetrahedra:
-			\end{itemize}
-		\end{center}
-	\begin{figure}
-		\vspace{-0.5cm}\includegraphics[trim={0 3cm 0cm 2cm},clip,width=0.65\textwidth]{FIGURES/Tetra_split.eps}
-	\end{figure}
-	\end{column}
-\end{columns}
-\end{frame}
+
 
 %\begin{frame}
 %\frametitle{Cylindrical contour grid}
@@ -587,16 +564,15 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 %
 
 
-\section{Symmetry flux coordinates}
 \begin{frame}
-\frametitle{Next step: symmetry flux coordinates (SFC)}
-\vspace{-1 cm}
+\frametitle{Field-aligned grid in symmetry flux coordinates}
+\vspace{-1.2 cm}
 \begin{columns}[onlytextwidth]
 	\begin{column}{0.5\textwidth}
 		\begin{center}
 			\begin{figure}
-				\includegraphics[trim={2cm 3cm 5cm 2cm},clip,width=1\textwidth]{FIGURES/SFC_pdf1.pdf}
-				\caption{Magnetic field topology}
+				\hspace{0.1cm}\includegraphics[trim={2cm 3cm 5cm 2cm},clip,width=1\textwidth]{FIGURES/SFC_pdf1.pdf}
+				Magnetic field topology$^{[4]}$
 			\end{figure}
 		\end{center}
 	\end{column}
@@ -611,86 +587,28 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 					\item $\varphi \rightarrow$ toroidal coordinate
 				\end{itemize}
 				\item field lines assume straight lines in SFC
-				\item $\vec{A}\propto s\cdot\hat{\varphi}$
+				\item $\textbf{A}\propto s\cdot\hat{\varphi}$
 				$\rightarrow$ no error due to linearization
 			\end{itemize}
 		\end{center}
 	\end{column}
 \end{columns}
+\vspace{1.1cm}
+\begin{tiny}
+[4] https://www.researchgate.net/profile/Yawei\_Hou/publication/335218824/figure/fig1
+\end{tiny}
 \end{frame}
 
 
-\begin{frame}[noframenumbering]
-\frametitle{Next step: symmetry flux coordinates (SFC)}
-\vspace{-1 cm}
-\begin{columns}[onlytextwidth]
-	\begin{column}{0.5\textwidth}
-		\begin{center}
-			\begin{figure}
-				\includegraphics[trim={2cm 3cm 5cm 2cm},clip,width=1\textwidth]{FIGURES/SFC_pdf1.pdf}
-				\caption{Magnetic field topology}
-			\end{figure}
-		\end{center}
-	\end{column}
-	\begin{column}{0.5\textwidth}
-		\vspace{0 cm}
-		\begin{center}
-			\begin{itemize}
-				\item coordinates $(s,\vartheta,\varphi)$\\
-				\begin{itemize}
-					\item $s\rightarrow$ minor-radial coordinate
-					\item $\vartheta \rightarrow$ poloidal coordinate
-					\item $\varphi \rightarrow$ toroidal coordinate
-				\end{itemize}
-				\item field lines assume straight lines in SFC
-				\item $\vec{A}\propto s\cdot\hat{\varphi}$
-				$\rightarrow$ no error due to linearization
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-\vspace{0.4 cm}
-\textbf{Problem with CCG: incompatible with SFC!}
-\end{frame}
-
-\section{Field aligned grid}
-\begin{frame}
-\frametitle{Implementing a field aligned grid}
-\vspace{-0 cm}
-\begin{columns}[onlytextwidth]
-	\begin{column}{0.5\textwidth}
-			\vspace{-1 cm}
-		\begin{center}
-			\begin{figure}
-				\includegraphics[trim={2cm 3cm 6cm 2cm},clip,width=1.1\textwidth]{FIGURES/SFC_pdf2.pdf}
-			\end{figure}
-		\end{center}
-	\end{column}
-	\begin{column}{0.5\textwidth}
-		\vspace{-1.5 cm}
-		\begin{center}
-			\begin{itemize}
-				\item find $O$-point and $X$-point
-				\item field line integration for coordinate interpolation
-				\item interpolation routine: $(s,\vartheta,\varphi)\rightarrow (R,\varphi,Z)$ for evaluation of field quantities
-				\item create 2D grid points \newline $\rightarrow$ extrude to 3D
-				\item connect vertices to tetrahedra with Delaunay condition
-			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-\end{frame}
-
-
-%\begin{frame}
-%\frametitle{Field-line integration}
-%\vspace{-0.5 cm}
+%\begin{frame}[noframenumbering]
+%\frametitle{Next step: symmetry flux coordinates (SFC)}
+%\vspace{-1 cm}
 %\begin{columns}[onlytextwidth]
 %	\begin{column}{0.5\textwidth}
 %		\begin{center}
 %			\begin{figure}
-%				\includegraphics[trim={0 0cm 0 0cm},clip,width=1\textwidth]{FIGURES/field_lines_torus.pdf}
-%				\caption{Selected field lines in torus}
+%				\includegraphics[trim={2cm 3cm 5cm 2cm},clip,width=1\textwidth]{FIGURES/SFC_pdf1.pdf}
+%				\caption{Magnetic field topology}
 %			\end{figure}
 %		\end{center}
 %	\end{column}
@@ -698,102 +616,27 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 %		\vspace{0 cm}
 %		\begin{center}
 %			\begin{itemize}
-%				\item Field line equations: $\frac{\textrm{d}R}{\textrm{d}\varphi} = \frac{B^R}{B^\varphi}, \hspace{0.1cm} \frac{\textrm{d}Z}{\textrm{d}\varphi} = \frac{B^Z}{B^\varphi}
-%				$
-%				\vspace{1cm}
-%				\item Safety factor: \newline $q = \frac{B^\varphi}{B^\vartheta},~\textrm{d}\varphi= q\textrm{d}\vartheta
-%				$
-%					\begin{itemize}
-%					\item if $q$ is irrational, the field line forms a flux surface
+%				\item coordinates $(s,\vartheta,\varphi)$\\
+%				\begin{itemize}
+%					\item $s\rightarrow$ minor-radial coordinate
+%					\item $\vartheta \rightarrow$ poloidal coordinate
+%					\item $\varphi \rightarrow$ toroidal coordinate
 %				\end{itemize}
+%				\item field lines assume straight lines in SFC
+%				\item $\vec{A}\propto s\cdot\hat{\varphi}$
+%				$\rightarrow$ no error due to linearization
 %			\end{itemize}
 %		\end{center}
 %	\end{column}
 %\end{columns}
+%\vspace{0.4 cm}
+%\textbf{Problem with CCG: incompatible with SFC!}
 %\end{frame}
-%
-%
-%
-%\begin{frame}
-%\frametitle{Finding the $O$-point}
-%\vspace{-1 cm}
-%\begin{columns}[onlytextwidth]
-%	\begin{column}{0.5\textwidth}
-%		\begin{center}
-%			\begin{figure}
-%				\includegraphics[trim={6cm 5cm 1.5cm 5cm cm},clip,width=0.6\textwidth]{FIGURES/getOpoint.pdf}
-%				\caption{Iterative scheme for finding the $O-point$}
-%			\end{figure}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.5\textwidth}
-%		\vspace{0 cm}
-%		\begin{center}
-%			\begin{itemize}
-%				\item start at point $1$, follow $\vec{B}$ for 10 toroidal turns in $(R,\varphi,Z)$
-%				\item  compute average of $(R,Z)\rightarrow$ new starting point for the next iteration
-%				\item perform 20 iterations for satisfying accuracy of the magnetic axis
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Finding the $X$-point}
-%\vspace{-1 cm}
-%\begin{columns}[onlytextwidth]
-%	\begin{column}{0.5\textwidth}
-%		\begin{center}
-%			\begin{figure}
-%				\includegraphics[trim={6cm 2.5cm 1.5cm 5cm cm},clip,width=0.6\textwidth]{FIGURES/getXpoint.pdf}
-%				\caption{Iterative scheme for finding the $X-point$}
-%			\end{figure}
-%		\end{center}
-%	\end{column}
-%	\begin{column}{0.5\textwidth}
-%		\vspace{0 cm}
-%		\begin{center}
-%			\begin{itemize}
-%				\item start inside and integrate field line for one poloidal turn
-%				\item increase distance to mag. axis and repeat until the field line does not cross $\rightarrow$ Separatrix
-%				\item perform iterative integrations with $\Delta\varphi= 2\pi/10$
-%				$\rightarrow$ convergence, since $B^{pol} = 0$ at $X$-point
-%			\end{itemize}
-%		\end{center}
-%	\end{column}
-%\end{columns}
-%\end{frame}
-%
-%\begin{frame}
-%\frametitle{Construct conversion routine from \newline field line data}
-%\vspace{0 cm}
-%%\begin{columns}[onlytextwidth]
-%%	\begin{column}{0.5\textwidth}
-%%		\begin{center}
-%%			\begin{figure}
-%%				\includegraphics[trim={0 0cm 0 0cm},clip,width=1\textwidth]{FIGURES/}
-%%				\caption{}
-%%			\end{figure}
-%%		\end{center}
-%%	\end{column}
-%%	\begin{column}{0.5\textwidth}
-%		\vspace{-0.5 cm}
-%		\begin{center}
-%			\begin{itemize}
-%				\item parametrize line segment from $O$-point to $X$-point
-%				\item integrate field lines in equidistant steps for one poloidal turn				
-%				\item save $(R,Z)$ data $\rightarrow s$ is constant, $\vartheta$ is equidistant
-%				\item interpolate data for coordinate conversion
-%							\begin{itemize}
-%				\item periodic splines in $\vartheta$
-%				\item lagrange polynomials in $s$
-%			\end{itemize}
-%			\end{itemize}
-%		\end{center}
-%%	\end{column}
-%%\end{columns}
-%\end{frame}
+
+
+
+
+
 
 
 
@@ -878,7 +721,7 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 %\end{frame}
 
 \begin{frame}
-\frametitle{Field aligned grid}
+\frametitle{Field-aligned grid}
 \vspace{-0.7cm}
 \begin{center}
 	\begin{figure}
@@ -888,82 +731,70 @@ Linearization of $A_k, B_k/ \omega_c$, $\omega_c$ and $\Phi$ in spatial cells \n
 \end{center}
 \end{frame}
 
-\begin{frame}
-\frametitle{One compromise: there is a hole}
-\vspace{-1.2cm}
-		\begin{center}
-			\begin{figure}
-				\includegraphics[trim={1cm 2cm 1cm 2cm},clip,width=1\textwidth]{FIGURES/Comparison_smin_annulus.eps}
-				\caption{Center region of the grid with annulus}
-			\end{figure}
-		\end{center}
-\end{frame}
 
-
-
-
-
-
-
-
-
-\section{Numerical orbit calculation}
-
-
+\section{Guiding-center orbit computation}
 \begin{frame}
 \frametitle{Computational approach}
-\vspace{-0.75cm}
+\vspace{-0.5cm}
 \begin{itemize}
 	\item Piecewise-constant coefficients of 
 	\setcounter{equation}{2}
-	\be{eq:EoM}
-	\frac{\rd z^i}{\rd \tau} = a^i_k z^k + b^i
-	\ee
+
+\begin{equation}
+\label{eq:EoM}
+\frac{\rd \textbf{z}}{\rd \tau} = \hat{\textbf{a}}\textbf{z} + \textbf{b}
+\end{equation}
+
+
 	are discontinuous at cell boundaries: \newline$\rightarrow$ orbit intersections must be computed accurately
 	\vspace{0.3cm}
-	\item Eq. set \eqref{eq:EoM} is numerically solved via \textbf{Runge-Kutta~4} in an iterative scheme using a \textbf{parabolic estimation} and \textbf{Newton's method.}
-
+	\item \textbf{Runge-Kutta~4} in iterative scheme using a \textbf{parabolic estimation} and \textbf{Newton's method}
+%	\item Analytical solution - Taylor series: 
+%	\be{}
+%	\textbf{z}=\textbf{z}_0 + \sum\limits_{k=1}^\infty \frac{\tau^k}{k!}\hat{\textbf{a}}^{k-1}\cdot (\textbf{b} + \hat{ \textbf{a}} \cdot\textbf{z}_0)
+%	\ee
 \end{itemize}
 \end{frame}
-\section{Analytical treatment}
-\begin{frame}
-\frametitle{Analytical solution to ODE set}
-\vspace{-1cm}
-\begin{itemize}
-	\item compute homogeneous solution \newline
-	\item find particular solution using variation of constants\newline
-\end{itemize}
 
-$\rightarrow x^i(\tau) =   \psi^i_l  \left(\bar{\psi}^l_k x^k_{(0)}e^{\lambda^l \tau} + \frac{\bar{\psi}^l_k D^k}{a-\lambda^l}(e^{a\tau}-e^{\lambda^l\tau}) + \right.$\\
-\vspace{0.5cm}
-\hspace{1.5cm}$\left. \frac{\bar{\psi}^l_k F^k}{2a-\lambda^l}(e^{2a\tau}-e^{\lambda^l\tau})-\frac{\bar{\psi}^l_k E^k}{\lambda^l}(1-e^{\lambda^l\tau}) \right)$
-\end{frame}
+%\section{Analytical solution}
+%\begin{frame}
+%\frametitle{Analytical solution to ODE set}
+%\vspace{-1cm}
+%\begin{itemize}
+%	\item compute homogeneous solution \newline
+%	\item find particular solution using variation of constants\newline
+%\end{itemize}
+%
+%$\rightarrow x^i(\tau) =   \psi^i_l  \left(\bar{\psi}^l_k x^k_{(0)}e^{\lambda^l \tau} + \frac{\bar{\psi}^l_k D^k}{a-\lambda^l}(e^{a\tau}-e^{\lambda^l\tau}) + \right.$\\
+%\vspace{0.5cm}
+%\hspace{1.5cm}$\left. \frac{\bar{\psi}^l_k F^k}{2a-\lambda^l}(e^{2a\tau}-e^{\lambda^l\tau})-\frac{\bar{\psi}^l_k E^k}{\lambda^l}(1-e^{\lambda^l\tau}) \right)$
+%\end{frame}
+%
+%\begin{frame}[noframenumbering]
+%\frametitle{Analytical solution to ODE set}
+%\vspace{-1cm}
+%\begin{itemize}
+%	\item compute homogeneous solution \newline
+%	\item find particular solution using variation of constants\newline
+%\end{itemize}
+%
+%$\rightarrow x^i(\tau) =   \psi^i_l  \left(\bar{\psi}^l_k x^k_{(0)}e^{\lambda^l \tau} + \frac{\bar{\psi}^l_k D^k}{a-\lambda^l}(e^{a\tau}-e^{\lambda^l\tau}) + \right.$\\
+%\vspace{0.5cm}
+%\hspace{1.5cm}$\left. \frac{\bar{\psi}^l_k F^k}{2a-\lambda^l}(e^{2a\tau}-e^{\lambda^l\tau})-\frac{\bar{\psi}^l_k E^k}{\lambda^l}(1-e^{\lambda^l\tau}) \right)$
+%\vspace{0.5cm}\\
+%\textbf{Unfortunately, due to numerical inaccuracies and high computational cost, this is not useful!}
+%\end{frame}
 
-\begin{frame}[noframenumbering]
-\frametitle{Analytical solution to ODE set}
-\vspace{-1cm}
-\begin{itemize}
-	\item compute homogeneous solution \newline
-	\item find particular solution using variation of constants\newline
-\end{itemize}
-
-$\rightarrow x^i(\tau) =   \psi^i_l  \left(\bar{\psi}^l_k x^k_{(0)}e^{\lambda^l \tau} + \frac{\bar{\psi}^l_k D^k}{a-\lambda^l}(e^{a\tau}-e^{\lambda^l\tau}) + \right.$\\
-\vspace{0.5cm}
-\hspace{1.5cm}$\left. \frac{\bar{\psi}^l_k F^k}{2a-\lambda^l}(e^{2a\tau}-e^{\lambda^l\tau})-\frac{\bar{\psi}^l_k E^k}{\lambda^l}(1-e^{\lambda^l\tau}) \right)$
-\vspace{0.5cm}\\
-\textbf{Unfortunately, due to numerical inaccuracies and high computational cost, this is not useful!}
-\end{frame}
 
 
-
-\begin{frame}
-\frametitle{New approach: Taylor expansion of solution}
-\vspace{0cm}
-ODE set: $$\frac{\rd \textbf{z}}{\rd \tau} = \hat{\textbf{a}}\textbf{z} + \textbf{b}$$ \newline
-\vspace{0cm}
-Taylor series: $$\textbf{z}=\textbf{z}_0 + \sum\limits_{k=1}^\infty \frac{\tau^k}{k!}\hat{\textbf{a}}^{k-1}\cdot (\textbf{b} + \hat{ \textbf{a}} \cdot\textbf{z}_0)$$ \newline
-$\rightarrow$ $RK4$ corresponds to fourth order expansion, thus the fifth order estimates the $RK4$-error!
-\end{frame}
+%\begin{frame}
+%\frametitle{New approach: Taylor expansion of solution}
+%\vspace{0cm}
+%ODE set: $$\frac{\rd \textbf{z}}{\rd \tau} = \hat{\textbf{a}}\textbf{z} + \textbf{b}$$ \newline
+%\vspace{0cm}
+%Taylor series: $$\textbf{z}=\textbf{z}_0 + \sum\limits_{k=1}^\infty \frac{\tau^k}{k!}\hat{\textbf{a}}^{k-1}\cdot (\textbf{b} + \hat{ \textbf{a}} \cdot\textbf{z}_0)$$ \newline
+%$\rightarrow$ $RK4$ corresponds to fourth order expansion, thus the fifth order estimates the $RK4$-error!
+%\end{frame}
 
 %\begin{frame}
 %\frametitle{Evaluating the $RK4$ error - CCG}
@@ -993,33 +824,6 @@ $\rightarrow$ $RK4$ corresponds to fourth order expansion, thus the fifth order 
 %\end{columns}
 %\end{frame}
 
-\begin{frame}
-\frametitle{Evaluating the $RK4$ error}
-\vspace{-1.5cm}
-\begin{columns}[onlytextwidth]
-	\begin{column}{0.5\textwidth}
-		\begin{center}
-			\begin{figure}
-				\includegraphics[trim={9cm 0cm 10cm 0cm},clip,width=1\textwidth]{FIGURES/RK4_alpha555_SFC.pdf}
-				\caption{$(N_s,N_\vartheta,N_\varphi)= 5\times5\times5$}
-				
-			\end{figure}
-		\end{center}
-	\end{column}
-	\begin{column}{0.5\textwidth}
-		\vspace{0cm}
-		\begin{center}
-			\begin{figure}
-				\includegraphics[trim={9cm 0cm 10cm 0cm},clip,width=1\textwidth]{FIGURES/RK4_alpha121212_SFC.pdf}
-				\caption{$(N_s,N_\vartheta,N_\varphi)= 12\times12\times12$}
-			\end{figure}
-			%			\begin{itemize}
-			%				\item
-			%			\end{itemize}
-		\end{center}
-	\end{column}
-\end{columns}
-\end{frame}
 
 %\begin{frame}
 %\frametitle{}
@@ -1145,10 +949,10 @@ $\rightarrow$ $RK4$ corresponds to fourth order expansion, thus the fifth order 
 %\end{frame}
 %
 
-%\section{Generating the field aligned grid}
+%\section{Generating the field-aligned grid}
 
 %\begin{frame}
-%\frametitle{3D field aligned grid: tetrahedral cells}
+%\frametitle{3D field-aligned grid: tetrahedral cells}
 %\vspace{-1.7cm}
 %%\hspace{-7cm}
 %	\begin{figure}
@@ -1178,36 +982,41 @@ $\rightarrow$ $RK4$ corresponds to fourth order expansion, thus the fifth order 
 
 \begin{frame}
 \frametitle{Radial Transport in a Stellarator (Monte Carlo)}
-\vspace{-1.2cm}
-%\hspace{-7cm}
-\hspace*{0.1cm}
+\vspace{-0.8cm}
+Mono-energetic radial diffusion coefficient $D_{11}$
+\vspace{-0.8cm}
 \begin{columns}[t]
-	\begin{column}{0.8\textwidth}
+	\begin{column}{0.85\textwidth}
 		\begin{figure}
-			\vspace*{-1.05cm}
-\hspace*{-0.5cm}\includegraphics[width=1\textwidth]{FIGURES/transport_coefficient_electrons_dions.eps}
+%			\vspace*{-1.05cm}
+\hspace*{-0.5cm}\includegraphics[trim={3cm 1cm 3cm 1cm},clip,width=0.95\textwidth]{FIGURES/transport_coefficient_electrons_dions.eps}
 
 \end{figure}
 \end{column}
 \hspace*{-1cm}
 \begin{column}{0.2\textwidth}
-	\vspace*{0.8cm}
+\vspace{0.4cm}
 	\bea*{} 
 		\nu^{\ast} &=& \frac{R_0 \nu_c}{\iota v} \nonumber \\
 		\quad \nonumber \\ 
 		v_E^{\ast} &=& \frac{E_r}{v B_0} \nonumber
 	\eea
-	
+	\vspace{0.1cm}
+	\underline{Init. cond.:}\\
+	\vspace{0.2cm}
+	$E=$ 3 keV\\
+	\vspace{0.2cm}
+	$s_0 = 0.6$
 	\end{column}
 \end{columns}
-Mono-energetic radial diffusion coefficient,\newline
-$E_{kin}=$ 3 keV, $s_0 = 0.6$
+
 \end{frame}
 
 
-\section{Conclusion}
+%\section{Conclusion and Outlook}
+\section{ }
 \begin{frame}
-\frametitle{Conclusion}
+\frametitle{Conclusion and Outlook}
 \vspace*{-0.5cm}
 %\textit{\textbf{Advantages:}}\\
 \begin{itemize}
@@ -1215,7 +1024,7 @@ $E_{kin}=$ 3 keV, $s_0 = 0.6$
 \item Particle coordinates and velocities are implicitly given at cell boundaries
 \item Computational efficiency
 \item Low sensitivity to noise in electromagnetic fields
-
+\item Computation of quasi-steady plasma parameters and kinetic equilibria
 \end{itemize}
 %\textit{\textbf{Limitations:}}
 %\begin{itemize}
@@ -1223,7 +1032,6 @@ $E_{kin}=$ 3 keV, $s_0 = 0.6$
 %\end{itemize}
 \end{frame}
 
-\section{Conclusion}
 
 
 
@@ -1240,6 +1048,21 @@ $E_{kin}=$ 3 keV, $s_0 = 0.6$
  \end{frame}
 
 \section{Back-up slides}
+\begin{frame}
+\frametitle{Target application: kinetic equilibria}
+	\begin{center}
+	\vspace{-1.2cm}
+	\includegraphics[trim={0 0 0 3cm},clip,width=\textwidth]{FIGURES/cycle01.pdf}
+	\end{center}	
+	\vspace{-0.5cm} 
+	\textbf{Requirements to integrator:}\\
+	\begin{footnotesize}
+	\textbf{1.} physically correct long time orbit dynamics\\
+	\textbf{2.} low sensitivity to noise in fields\\
+	\textbf{3.} high computational efficiency	
+	\end{footnotesize}
+\end{frame}
+
 
 \begin{frame}
 \frametitle{Physically correct long time orbit dynamics}
@@ -1256,6 +1079,179 @@ $E_{kin}=$ 3 keV, $s_0 = 0.6$
 \end{itemize}
 
 \end{frame}
+
+\begin{frame}
+\frametitle{Previous grid in cylindrical coordinates}
+\vspace{-1.5 cm}
+\begin{columns}[onlytextwidth]
+	\begin{column}{0.5\textwidth}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[trim={0 1cm 0 2cm},clip,width=0.8\textwidth]{FIGURES/3d_grid_sketch_torus.pdf}
+				\caption{Hexahedra}
+				\vspace{-0.2 cm}
+				\includegraphics[trim={0 1cm 0 2cm},clip,width=0.8\textwidth]{FIGURES/full_grid_rect.png}
+				\caption{Cylindrical Contour Grid}
+			\end{figure}
+		\end{center}
+	\end{column}
+	\begin{column}{0.48\textwidth}
+		\vspace{-0cm}
+		\begin{center}
+			\begin{itemize}
+				\item vertices lie on contours of cylindrical coordinates $(R,\varphi,Z)$
+				\item hexahedra are obtained via indexing
+				\item each hexahedron is cut into six tetrahedra:
+			\end{itemize}
+		\end{center}
+	\begin{figure}
+		\vspace{-0.5cm}\includegraphics[trim={0 3cm 0cm 2cm},clip,width=0.65\textwidth]{FIGURES/Tetra_split.eps}
+	\end{figure}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Implementing the field-aligned grid}
+\vspace{-0 cm}
+\begin{columns}[onlytextwidth]
+	\begin{column}{0.5\textwidth}
+			\vspace{-1 cm}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[trim={2cm 3cm 6cm 2cm},clip,width=1.1\textwidth]{FIGURES/SFC_pdf2.pdf}
+			\end{figure}
+		\end{center}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\vspace{-1.5 cm}
+		\begin{center}
+			\begin{itemize}
+				\item find $O$-point and $X$-point
+				\item field line integration for coordinate interpolation
+				\item interpolation routine: $(s,\vartheta,\varphi)\rightarrow (R,\varphi,Z)$ for evaluation of field quantities
+				\item create 2D grid points \newline $\rightarrow$ extrude to 3D
+				\item connect vertices to tetrahedra with Delaunay condition
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Field-line integration}
+\vspace{-0.5 cm}
+\begin{columns}[onlytextwidth]
+	\begin{column}{0.5\textwidth}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[trim={0 0cm 0 0cm},clip,width=1\textwidth]{FIGURES/field_lines_torus.pdf}
+				\caption{Selected field lines in torus}
+			\end{figure}
+		\end{center}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\vspace{0 cm}
+		\begin{center}
+			\begin{itemize}
+				\item Field line equations: $\frac{\textrm{d}R}{\textrm{d}\varphi} = \frac{B^R}{B^\varphi}, \hspace{0.1cm} \frac{\textrm{d}Z}{\textrm{d}\varphi} = \frac{B^Z}{B^\varphi}
+				$
+				\vspace{1cm}
+				\item Safety factor: \newline $q = \frac{B^\varphi}{B^\vartheta},~\textrm{d}\varphi= q\textrm{d}\vartheta
+				$
+					\begin{itemize}
+					\item if $q$ is irrational, the field line forms a flux surface
+				\end{itemize}
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Finding the $O$-point}
+\vspace{-1 cm}
+\begin{columns}[onlytextwidth]
+	\begin{column}{0.5\textwidth}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[trim={6cm 5cm 1.5cm 5cm cm},clip,width=0.6\textwidth]{FIGURES/getOpoint.pdf}
+				\caption{Iterative scheme for finding the $O-point$}
+			\end{figure}
+		\end{center}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\vspace{0 cm}
+		\begin{center}
+			\begin{itemize}
+				\item start at point $1$, follow $\vec{B}$ for 10 toroidal turns in $(R,\varphi,Z)$
+				\item  compute average of $(R,Z)\rightarrow$ new starting point for the next iteration
+				\item perform 20 iterations for satisfying accuracy of the magnetic axis
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Finding the $X$-point}
+\vspace{-1 cm}
+\begin{columns}[onlytextwidth]
+	\begin{column}{0.5\textwidth}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[trim={6cm 2.5cm 1.5cm 5cm cm},clip,width=0.6\textwidth]{FIGURES/getXpoint.pdf}
+				\caption{Iterative scheme for finding the $X-point$}
+			\end{figure}
+		\end{center}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\vspace{0 cm}
+		\begin{center}
+			\begin{itemize}
+				\item start inside and integrate field line for one poloidal turn
+				\item increase distance to mag. axis and repeat until the field line does not cross $\rightarrow$ Separatrix
+				\item perform iterative integrations with $\Delta\varphi= 2\pi/10$
+				$\rightarrow$ convergence, since $B^{pol} = 0$ at $X$-point
+			\end{itemize}
+		\end{center}
+	\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Construct conversion routine from \newline field line data}
+\vspace{0 cm}
+%\begin{columns}[onlytextwidth]
+%	\begin{column}{0.5\textwidth}
+%		\begin{center}
+%			\begin{figure}
+%				\includegraphics[trim={0 0cm 0 0cm},clip,width=1\textwidth]{FIGURES/}
+%				\caption{}
+%			\end{figure}
+%		\end{center}
+%	\end{column}
+%	\begin{column}{0.5\textwidth}
+		\vspace{-0.5 cm}
+		\begin{center}
+			\begin{itemize}
+				\item parametrize line segment from $O$-point to $X$-point
+				\item integrate field lines in equidistant steps for one poloidal turn				
+				\item save $(R,Z)$ data $\rightarrow s$ is constant, $\vartheta$ is equidistant
+				\item interpolate data for coordinate conversion
+							\begin{itemize}
+				\item periodic splines in $\vartheta$
+				\item lagrange polynomials in $s$
+			\end{itemize}
+			\end{itemize}
+		\end{center}
+%	\end{column}
+%\end{columns}
+\end{frame}
+
+
 
 \begin{frame}
 \frametitle{Generate grid vertices}
@@ -1310,6 +1306,45 @@ $E_{kin}=$ 3 keV, $s_0 = 0.6$
 		\end{figure}
 	\end{center}
 \end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{One compromise: there is a hole}
+\vspace{-1.2cm}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[trim={1cm 2cm 1cm 2cm},clip,width=1\textwidth]{FIGURES/Comparison_smin_annulus.eps}
+				\caption{Center region of the grid with annulus}
+			\end{figure}
+		\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluating the $RK4$ error}
+\vspace{-1.5cm}
+\begin{columns}[onlytextwidth]
+	\begin{column}{0.5\textwidth}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[trim={9cm 0cm 10cm 0cm},clip,width=1\textwidth]{FIGURES/RK4_alpha555_SFC.pdf}
+				\caption{$(N_s,N_\vartheta,N_\varphi)= 5\times5\times5$}
+				
+			\end{figure}
+		\end{center}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\vspace{0cm}
+		\begin{center}
+			\begin{figure}
+				\includegraphics[trim={9cm 0cm 10cm 0cm},clip,width=1\textwidth]{FIGURES/RK4_alpha121212_SFC.pdf}
+				\caption{$(N_s,N_\vartheta,N_\varphi)= 12\times12\times12$}
+			\end{figure}
+			%			\begin{itemize}
+			%				\item
+			%			\end{itemize}
+		\end{center}
+	\end{column}
 \end{columns}
 \end{frame}
 
